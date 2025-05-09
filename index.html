@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nagano Lean Body Tonic – Japanese Secret to Natural Fat Burning</title>
-  <meta name="description" content="Discover the Japanese-inspired Nagano Lean Body Tonic. Boost metabolism, reduce cravings, and burn fat naturally with 100% natural ingredients." />
+  <title>Unlock the Japanese Secret to Fast, Natural Fat Loss | Nagano Lean Body Tonic</title>
+  <meta name="description" content="Discover how Nagano Lean Body Tonic can help you burn fat, control cravings, and boost energy naturally. Limited-time offer with a 180-day guarantee!" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -30,17 +30,30 @@
     .header img {
       width: 120px;
       margin-bottom: 18px;
+      border-radius: 12px;
     }
     .headline {
       font-size: 2.1em;
       color: #c0392b;
       font-weight: 700;
       margin-bottom: 10px;
+      line-height: 1.2;
     }
     .subheadline {
       font-size: 1.15em;
-      color: #555;
-      margin-bottom: 26px;
+      color: #444;
+      margin-bottom: 18px;
+    }
+    .scarcity {
+      background: #c0392b;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 0;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      text-align: center;
+      font-size: 1.08em;
+      letter-spacing: 0.5px;
     }
     form {
       background: #f9e9e0;
@@ -48,6 +61,7 @@
       padding: 24px 18px;
       margin-bottom: 32px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.06);
     }
     input[type="text"],
     input[type="email"] {
@@ -61,14 +75,15 @@
     button {
       background: #c0392b;
       color: #fff;
-      font-size: 1.1em;
+      font-size: 1.2em;
       font-weight: bold;
       border: none;
-      padding: 12px 32px;
+      padding: 14px 36px;
       border-radius: 6px;
       cursor: pointer;
-      margin-top: 12px;
+      margin-top: 16px;
       transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.08);
     }
     button:hover {
       background: #a93226;
@@ -87,11 +102,14 @@
     }
     .benefits li {
       margin-bottom: 10px;
-      font-size: 1.05em;
+      font-size: 1.08em;
+      display: flex;
+      align-items: center;
     }
     .benefits li i {
       color: #c0392b;
-      margin-right: 8px;
+      margin-right: 10px;
+      font-size: 1.15em;
     }
     .section {
       margin-bottom: 32px;
@@ -106,11 +124,22 @@
       border-radius: 10px;
       padding: 18px;
       margin-bottom: 32px;
+      border-left: 5px solid #c0392b;
     }
     .testimonial {
       font-style: italic;
       color: #555;
       margin-bottom: 12px;
+      position: relative;
+      padding-left: 24px;
+    }
+    .testimonial:before {
+      content: "“";
+      font-size: 2em;
+      color: #c0392b;
+      position: absolute;
+      left: 0;
+      top: -12px;
     }
     .guarantee {
       background: #f9e9e0;
@@ -118,6 +147,7 @@
       padding: 18px;
       text-align: center;
       margin-bottom: 32px;
+      border: 1px dashed #c0392b;
     }
     .guarantee strong {
       color: #c0392b;
@@ -129,15 +159,17 @@
     .cta-btn-center a {
       background: #c0392b;
       color: #fff;
-      font-size: 1.15em;
+      font-size: 1.18em;
       font-weight: bold;
       border: none;
-      padding: 16px 44px;
+      padding: 18px 48px;
       border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
       transition: background 0.2s;
       display: inline-block;
+      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(192,57,43,0.08);
     }
     .cta-btn-center a:hover {
       background: #a93226;
@@ -152,6 +184,7 @@
       .container { padding: 18px 6px; }
       .header img { width: 80px; }
       .headline { font-size: 1.3em; }
+      .cta-btn-center a { font-size: 1em; padding: 14px 20px; }
     }
   </style>
 </head>
@@ -159,78 +192,73 @@
   <div class="container">
     <div class="header">
       <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Nagano Tonic Bottle" />
-      <div class="headline">Discover the Japanese Secret to Natural Fat Burning</div>
-      <div class="subheadline">Nagano Lean Body Tonic – Boost your metabolism, curb cravings, and burn fat naturally with 100% natural ingredients.</div>
+      <div class="headline">Unlock the Japanese Secret to Fast, Natural Fat Loss</div>
+      <div class="subheadline">Thousands have already transformed their bodies with <strong>Nagano Lean Body Tonic</strong>. Are you next?</div>
+    </div>
+    <div class="scarcity">
+      <i class="fa-solid fa-clock"></i> Limited-Time Offer: Get an exclusive discount and a 180-day guarantee. Hurry, spots are filling up fast!
     </div>
     <form id="leadForm">
-      <div style="font-size:1.1em; margin-bottom:10px;">
-        <strong>Claim your exclusive discount and try Nagano Tonic risk-free!</strong>
+      <div style="font-size:1.17em; margin-bottom:10px;">
+        <strong>Ready for real results? Enter your details below and unlock your exclusive offer!</strong>
       </div>
       <input type="text" name="name" placeholder="Your Name" required /><br />
-      <input type="email" name="email" placeholder="Your Email" required /><br />
-      <button type="submit">I Want to Lose Weight the Healthy Way!</button>
+      <input type="email" name="email" placeholder="Your Best Email" required /><br />
+      <button type="submit">YES! I Want to Transform My Body Now</button>
+      <div style="font-size:0.98em; color:#c0392b; margin-top:12px;">
+        <i class="fa-solid fa-lock"></i> Your information is 100% safe and will never be shared.
+      </div>
     </form>
     <div class="benefits">
-      <h2><i class="fa-solid fa-leaf"></i> Key Benefits</h2>
+      <h2><i class="fa-solid fa-leaf"></i> Why Choose Nagano Lean Body Tonic?</h2>
       <ul>
-        <li><i class="fa-solid fa-fire"></i> Proven belly fat burning</li>
-        <li><i class="fa-solid fa-utensils"></i> Reduces cravings and appetite</li>
-        <li><i class="fa-solid fa-bolt"></i> Clean energy and vitality</li>
-        <li><i class="fa-solid fa-seedling"></i> 100% natural, non-GMO ingredients</li>
-        <li><i class="fa-solid fa-shield-heart"></i> 180-day money-back guarantee</li>
+        <li><i class="fa-solid fa-fire"></i> <b>Burn stubborn belly fat</b> – Naturally and effectively</li>
+        <li><i class="fa-solid fa-utensils"></i> <b>Crush cravings</b> and control your appetite</li>
+        <li><i class="fa-solid fa-bolt"></i> <b>Boost your energy</b> without jitters</li>
+        <li><i class="fa-solid fa-seedling"></i> <b>100% natural & non-GMO</b> ingredients</li>
+        <li><i class="fa-solid fa-thumbs-up"></i> <b>Thousands of success stories</b> worldwide</li>
+        <li><i class="fa-solid fa-shield-heart"></i> <b>180-day money-back guarantee</b> – Zero risk!</li>
       </ul>
+    </div>
+    <div class="section testimonials">
+      <h2>Real People. Real Results.</h2>
+      <div class="testimonial">Nagano Tonic helped me lose 18 pounds in just 5 weeks. I feel more energetic and confident than ever! - <b>Sarah M.</b></div>
+      <div class="testimonial">I tried everything before, but nothing worked like this. My cravings are gone and my belly is finally flat! - <b>Lucas R.</b></div>
+      <div class="testimonial">The best part? It's all natural and I feel amazing every day. - <b>Emily S.</b></div>
     </div>
     <div class="section">
       <h2>How Does It Work?</h2>
       <p>
-        Nagano Lean Body Tonic is a natural elixir inspired by centuries of Japanese wisdom. Its unique blend of green tea EGCG, inulin, ashwagandha, camu camu, ginger, turmeric, and other superfoods helps activate your metabolism, reduce cravings, and support healthy, sustainable weight loss.
-      </p>
-    </div>
-    <div class="section testimonials">
-      <h2>What Real Users Say</h2>
-      <div class="testimonial">“I lost 30 pounds in 6 weeks and never felt better!”</div>
-      <div class="testimonial">“My appetite shrank and my belly is finally flat.”</div>
-    </div>
-    <div class="section">
-      <h2>How to Take</h2>
-      <p>
-        Simply mix one scoop in water or juice each morning. Most users notice changes in 7–14 days, with best results after 30 days of consistent use.
+        Inspired by ancient Japanese wisdom, Nagano Lean Body Tonic combines green tea EGCG, inulin, ashwagandha, camu camu, ginger, turmeric, and more. This unique blend <b>activates your metabolism, reduces cravings, and supports healthy, sustainable weight loss</b> – without dangerous stimulants or crash diets.
       </p>
     </div>
     <div class="guarantee">
       <strong>Try Nagano Tonic 100% Risk-Free!</strong><br />
-      Enjoy a <strong>180-day money-back guarantee</strong> on every order. If you’re not satisfied, get your money back-no questions asked.
+      Enjoy a <strong>180-day money-back guarantee</strong> on every order. If you’re not satisfied for any reason, get your money back – no questions asked.
     </div>
-    <div class="section">
-      <h2>Frequently Asked Questions</h2>
-      <ul>
-        <li><strong>What is Nagano Tonic?</strong> A natural powdered supplement inspired by Japanese tradition, designed to help burn fat, control appetite, and boost energy.</li>
-        <li><strong>Are there any side effects?</strong> No serious side effects reported. Consult your doctor if you have sensitivities or medical conditions.</li>
-        <li><strong>Where can I buy?</strong> Only on the official website. Avoid marketplaces to prevent counterfeits.</li>
-      </ul>
+    <div class="cta-btn-center">
+      <a href="https://hop.clickbank.net/?affiliate=caioadm&vendor=lbtonic&pid=18" target="_blank" rel="noopener noreferrer">
+        👉 YES! I Want My Exclusive Discount Now
+      </a>
+      <div style="font-size:1em; color:#c0392b; margin-top:8px;">
+        <i class="fa-solid fa-arrow-right"></i> Click and secure your spot while supplies last!
+      </div>
     </div>
     <div class="footer">
       &copy; 2025 Nagano Lean Body Tonic. This product is not intended to diagnose, treat, cure, or prevent any disease. Always consult your doctor before starting any supplement.
     </div>
   </div>
-
   <script>
     const affiliateLink = "https://hop.clickbank.net/?affiliate=caioadm&vendor=lbtonic&pid=18";
-
     document.getElementById('leadForm').addEventListener('submit', function(e) {
       e.preventDefault();
-
-      // Capture form data (you can send this to your CRM or email marketing here)
+      // Optionally, capture the lead here via AJAX to your CRM or email marketing
       const name = e.target.name.value.trim();
       const email = e.target.email.value.trim();
-
       if (!name || !email) {
         alert('Please fill in both your name and email.');
         return;
       }
-
-      // Here you could add code to save leads to your database or email autoresponder
-
       // Redirect to affiliate link after submission
       window.location.href = affiliateLink;
     });
